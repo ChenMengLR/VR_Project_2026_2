@@ -1,5 +1,7 @@
 # VR Project 2026 2
 
+最新状态见 [个人作业进度](Docs/Current_Personal_Assignment_Status.md)：Inspector 截图已补齐、Notion 编辑权限已恢复，小组任务按用户要求忽略。
+
 WANG HAOBIN 的个人 VR 课程项目。第 2 周使用 Unity XR Interaction Toolkit 学习抓取，第 3 周使用 Meta XR Interaction SDK 学习移动与传送。当前没有 Quest 设备，真机验证与小组任务仍待完成。
 
 ## 打开和练习
