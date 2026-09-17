@@ -1,6 +1,6 @@
 # VR Project 2026 2
 
-最新状态见 [个人作业进度](Docs/Current_Personal_Assignment_Status.md)：仓库已公开、Inspector 截图已补齐、Notion 编辑权限已恢复，小组任务按用户要求忽略。
+最新状态见 [个人作业进度](Docs/Current_Personal_Assignment_Status.md)：仓库已公开，第 2 周已在 Notion 提交仓库链接、自动协助 Play 验证视频和 Inspector 截图；第 3 周已填写电脑端结果，仍待 Quest 真机视频后提交。小组任务按用户要求忽略。
 
 WANG HAOBIN 的个人 VR 课程项目。第 2 周使用 Unity XR Interaction Toolkit 学习抓取，第 3 周使用 Meta XR Interaction SDK 学习移动与传送。当前没有 Quest 设备，真机验证仍待完成；小组任务按用户要求不在本次范围内。
 
@@ -49,7 +49,12 @@ Windows 和 Android 已配置 OpenXR/Oculus Touch，Android 启用 Meta Quest Su
 
 第 3 周：个人仓库链接、Quest 真机连续演示 Start → Teleport → Grab → Release。电脑模拟器证据不能替代课程要求的真机视频。
 
-GitHub 上传与 Notion 作业提交是两个步骤。[个人作业卡](https://app.notion.com/p/Wang-Haobin-3d67c00fe5ad81288de5d923b15cf0d2) 的编辑权限已恢复，GitHub Repository 字段已填写。ExtensionObject Inspector 截图已补齐，但尚未上传 Notion 附件或把两周作业标记为已提交；第 3 周仍缺 Quest 真机视频。小组任务按用户要求忽略。
+GitHub 上传与 Notion 作业提交是两个步骤。[个人作业卡](https://app.notion.com/p/Wang-Haobin-3d67c00fe5ad81288de5d923b15cf0d2) 的编辑权限已恢复，GitHub Repository 字段已填写。
+
+- [第 2 周 Notion 作业](https://app.notion.com/p/2-2-3dd7c00fe5ad8163920ed7bbd12cd78f)：2026 年 9 月 17 日已填写 GitHub 链接，上传 `Week02_Automated_Play_Test.mp4`，在正文附上 ExtensionObject Inspector 截图并完成视觉读回；状态为“已提交”。作业中已明确标注视频是自动协助 Play 验证，不代表学生本人手动操作或 Quest 真机录像。
+- [第 3 周 Notion 作业](https://app.notion.com/p/3-3-3dd7c00fe5ad8183a849f8b55c3b8133)：已填写仓库链接和电脑端报告说明；保持未提交，等待 Quest 真人连续演示视频。电脑端结果不能替代真机要求。
+
+小组任务按用户要求忽略。
 
 [课程仓库](https://github.com/ChenMengLR/VR_Project_2026_2) 已公开（Public），老师无需登录或接受邀请即可查看代码、截图与视频。
 
