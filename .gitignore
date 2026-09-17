@@ -26,5 +26,7 @@ crashlytics-build.properties
 CourseValidation/SceneBackups/
 CourseValidation/Frames/
 Assets/XR/APILayers~/
+Assets/_Recovery/
+Assets/_Recovery.meta
 .DS_Store
 Thumbs.db

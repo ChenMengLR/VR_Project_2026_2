@@ -1,0 +1,43 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var ball=UnityEngine.GameObject.Find(\"MissionObject\");return new {frame=UnityEngine.Time.frameCount,ball=new float[]{ball.transform.position.x,ball.transform.position.y,ball.transform.position.z},kinematic=ball.GetComponent<UnityEngine.Rigidbody>().isKinematic,interactors=UnityEngine.Object.FindObjectsByType<Oculus.Interaction.GrabInteractor>(UnityEngine.FindObjectsSortMode.None).Select(x=>new {state=x.State.ToString(),selected=x.Interactable==null?\"null\":x.Interactable.transform.parent.name,body=x.Rigidbody.position.ToString()}).ToArray()};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "frame": 38390,
+        "ball": [
+          1.67888141,
+          0.806535065,
+          1.23944271
+        ],
+        "kinematic": true,
+        "interactors": [
+          {
+            "state": "Normal",
+            "selected": "null",
+            "body": "(0.90, 1.37, 1.13)"
+          },
+          {
+            "state": "Select",
+            "selected": "MissionObject",
+            "body": "(1.68, 0.72, 1.25)"
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\31797\\Desktop\\VR_Project_2026_2"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

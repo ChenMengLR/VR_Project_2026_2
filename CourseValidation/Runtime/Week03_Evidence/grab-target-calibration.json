@@ -1,0 +1,65 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var rig=UnityEngine.Object.FindFirstObjectByType<OVRCameraRig>(); var ball=UnityEngine.GameObject.Find(\"MissionObject\"); var dir=ball.transform.position-rig.centerEyeAnchor.position; var q=UnityEngine.Quaternion.Inverse(rig.trackingSpace.rotation)*UnityEngine.Quaternion.LookRotation(dir); var local=rig.trackingSpace.InverseTransformPoint(ball.transform.position); return new {q=new float[]{-q.x,-q.y,q.z,q.w},ball=ball.transform.position.ToString(),nativeTarget=new float[]{local.x,local.y,-local.z},grabs=UnityEngine.Object.FindObjectsByType<Oculus.Interaction.GrabInteractor>(UnityEngine.FindObjectsSortMode.None).Select(x=>new {name=x.name,state=x.State.ToString(),position=x.transform.position.ToString(),parent=x.transform.parent.name}).ToArray(),components=ball.GetComponentsInChildren<UnityEngine.Component>().Select(x=>x.GetType().FullName).ToArray()};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "q": [
+          -0.5705466,
+          -0.272530675,
+          -0.208384246,
+          0.7461767
+        ],
+        "ball": "(1.50, 0.21, 1.15)",
+        "nativeTarget": [
+          0.2651945,
+          0.184999943,
+          -0.314615965
+        ],
+        "grabs": [
+          {
+            "name": "ControllerGrabInteractor",
+            "state": "Normal",
+            "position": "(1.40, 0.02, 0.75)",
+            "parent": "Controller and No Hand"
+          },
+          {
+            "name": "ControllerGrabInteractor",
+            "state": "Normal",
+            "position": "(1.40, 0.02, 0.75)",
+            "parent": "Controller and No Hand"
+          }
+        ],
+        "components": [
+          "UnityEngine.Transform",
+          "UnityEngine.MeshFilter",
+          "UnityEngine.SphereCollider",
+          "UnityEngine.MeshRenderer",
+          "UnityEngine.Rigidbody",
+          "Oculus.Interaction.Grabbable",
+          "Oculus.Interaction.InteractableTriggerBroadcaster",
+          "Oculus.Interaction.InteractableTriggerBroadcaster",
+          "Oculus.Interaction.GrabFreeTransformer",
+          "UnityEngine.Transform",
+          "Oculus.Interaction.HandGrab.HandGrabInteractable",
+          "Oculus.Interaction.GrabInteractable",
+          "Oculus.Interaction.MoveTowardsTargetProvider"
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\31797\\Desktop\\VR_Project_2026_2"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

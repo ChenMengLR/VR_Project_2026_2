@@ -1,0 +1,51 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var settings=UnityEngine.XR.OpenXR.OpenXRSettings.GetSettingsForBuildTargetGroup(UnityEditor.BuildTargetGroup.Standalone);var layers=settings.GetFeature<UnityEngine.XR.OpenXR.Features.ApiLayersFeature>();return new{playing=UnityEditor.EditorApplication.isPlaying,scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().path,dirty=UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty,handTracking=OVRProjectConfig.CachedProjectConfig.handTrackingSupport.ToString(),apiLayers=layers.enabled,operatorLayer=layers.apiLayers.IsEnabled(\"XR_APILAYER_METAX_operator\",System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture),externalEditor=Unity.CodeEditor.CodeEditor.CurrentEditorInstallation,controllerProfiles=settings.GetFeatures<UnityEngine.XR.OpenXR.Features.OpenXRFeature>().Where(f=>f.enabled).Select(f=>f.GetType().FullName).ToArray(),zones=new[]{\"StartZone\",\"TargetZone\",\"MissionObject\"}.Select(n=>new{name=n,position=UnityEngine.GameObject.Find(n).transform.position.ToString()}).ToArray()};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "playing": false,
+        "scene": "Assets/01_Scenes/Week03_Meta_Locomotion.unity",
+        "dirty": true,
+        "handTracking": "ControllersOnly",
+        "apiLayers": false,
+        "operatorLayer": false,
+        "externalEditor": "D:\\Microsoft VS Code\\Code.exe",
+        "controllerProfiles": [
+          "Meta.XR.MetaXRFeature",
+          "Meta.XR.MetaXRFoveationFeature",
+          "UnityEngine.XR.OpenXR.Features.Interactions.OculusTouchControllerProfile",
+          "Meta.XR.OculusTouchControllerProximityProfile"
+        ],
+        "zones": [
+          {
+            "name": "StartZone",
+            "position": "(-1.50, 0.09, 0.75)"
+          },
+          {
+            "name": "TargetZone",
+            "position": "(1.50, 0.09, 0.75)"
+          },
+          {
+            "name": "MissionObject",
+            "position": "(1.50, 1.14, 1.15)"
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\31797\\Desktop\\VR_Project_2026_2"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

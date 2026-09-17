@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "return UnityEngine.Object.FindObjectsByType<Oculus.Interaction.Locomotion.TeleportInteractor>(UnityEngine.FindObjectsSortMode.None).Where(t=>t.State.ToString()==\"Hover\").Select(t=>new {candidate=t.Candidate.name,parent=t.Candidate.transform.parent==null?\"none\":t.Candidate.transform.parent.name,target=t.TeleportTarget.position.ToString()}).ToArray();"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": [
+        {
+          "candidate": "ISDK_TeleportInteraction",
+          "parent": "TargetZone",
+          "target": "(1.50, 0.09, 0.75)"
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\31797\\Desktop\\VR_Project_2026_2"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

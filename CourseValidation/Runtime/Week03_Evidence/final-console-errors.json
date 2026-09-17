@@ -1,0 +1,41 @@
+{
+  "success": true,
+  "command": "command console",
+  "data": {
+    "command": "console",
+    "parameters": {
+      "level": "error",
+      "tail": "20"
+    },
+    "result": {
+      "entries": [],
+      "cursor": 613,
+      "session": "d2394c528a4c4be8a6c2d5655c01dd0c",
+      "returned": 0,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 0,
+        "warn": 154,
+        "log": 459
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-09-17T06:57:12.3329859Z",
+        "ageMs": 140,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 0,
+        "consoleWarnings": 33,
+        "consoleLogs": 127,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\31797\\Desktop\\VR_Project_2026_2"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

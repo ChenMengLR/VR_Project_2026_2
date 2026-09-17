@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var type=typeof(CourseSetup.Meta205EditorLogCompatibility); var bytes=new byte[]{0x53,0x59,0x4e,0x54,0x48,0x20,0xff,0xc3,0x28};var pointer=System.Runtime.InteropServices.Marshal.AllocHGlobal(bytes.Length);try{System.Runtime.InteropServices.Marshal.Copy(bytes,0,pointer,bytes.Length);type.GetMethod(\"ReceiveNativeLog\",System.Reflection.BindingFlags.Static|System.Reflection.BindingFlags.NonPublic).Invoke(null,new object[]{OVRPlugin.LogLevel.Error,pointer,bytes.Length});}finally{System.Runtime.InteropServices.Marshal.FreeHGlobal(pointer);}return new {test=\"SYNTHETIC malformed UTF8 buffer, not natural runtime reproduction\",base64=System.Convert.ToBase64String(bytes),success=true};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "test": "SYNTHETIC malformed UTF8 buffer, not natural runtime reproduction",
+        "base64": "U1lOVEgg/8Mo",
+        "success": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\31797\\Desktop\\VR_Project_2026_2"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

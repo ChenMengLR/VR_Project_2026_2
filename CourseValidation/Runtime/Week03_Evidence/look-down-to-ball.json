@@ -1,0 +1,26 @@
+{
+  "timestamp": 1789627355.7742567,
+  "request": {
+    "tool": "openxr_set_head_pose",
+    "arguments": {
+      "orientation": [
+        -0.5705466,
+        -0.272530675,
+        -0.208384246,
+        0.7461767
+      ],
+      "base_space": "local_floor",
+      "duration_seconds": 0.5
+    },
+    "label": "look-down-to-ball"
+  },
+  "response": {
+    "isError": false,
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": true\n}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "if(UnityEditor.EditorApplication.isPlaying) throw new System.InvalidOperationException(\"Stop Play first\"); var s=UnityEngine.GameObject.Find(\"StartZone\").transform; var t=UnityEngine.GameObject.Find(\"TargetZone\").transform; var m=UnityEngine.GameObject.Find(\"MissionObject\").transform; UnityEditor.Undo.RecordObjects(new UnityEngine.Object[]{s,t,m},\"Move course route to clear courtyard\"); s.SetPositionAndRotation(new UnityEngine.Vector3(-1.5f,.08903508f,.75f),UnityEngine.Quaternion.LookRotation(UnityEngine.Vector3.right)); t.SetPositionAndRotation(new UnityEngine.Vector3(1.5f,.08903508f,.75f),UnityEngine.Quaternion.LookRotation(UnityEngine.Vector3.left)); m.position=t.position+new UnityEngine.Vector3(0f,1.05f,.4f); UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(s.gameObject.scene); var saved=UnityEditor.SceneManagement.EditorSceneManager.SaveScene(s.gameObject.scene); return new {saved=saved,start=new float[]{s.position.x,s.position.y,s.position.z},target=new float[]{t.position.x,t.position.y,t.position.z},mission=new float[]{m.position.x,m.position.y,m.position.z},distance=UnityEngine.Vector3.Distance(s.position,t.position)};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "saved": true,
+        "start": [
+          -1.5,
+          0.08903508,
+          0.75
+        ],
+        "target": [
+          1.5,
+          0.08903508,
+          0.75
+        ],
+        "mission": [
+          1.5,
+          1.139035,
+          1.15
+        ],
+        "distance": 3
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\31797\\Desktop\\VR_Project_2026_2"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

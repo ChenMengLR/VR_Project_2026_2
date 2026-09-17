@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "return UnityEngine.Object.FindObjectsByType<Oculus.Interaction.GrabInteractor>(UnityEngine.FindObjectsSortMode.None).Select(x=>new {name=x.name,state=x.State.ToString(),candidate=x.Candidate==null?\"null\":x.Candidate.name,body=x.Rigidbody.position.ToString(),collider=x.Rigidbody.GetComponentsInChildren<UnityEngine.Collider>().Select(c=>new {name=c.name,center=c.bounds.center.ToString(),size=c.bounds.size.ToString()}).ToArray()}).ToArray();"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": [
+        {
+          "name": "ControllerGrabInteractor",
+          "state": "Normal",
+          "candidate": "null",
+          "body": "(0.90, 1.37, 1.13)",
+          "collider": [
+            {
+              "name": "ControllerGrabLocation",
+              "center": "(0.90, 1.37, 1.13)",
+              "size": "(0.10, 0.10, 0.10)"
+            }
+          ]
+        },
+        {
+          "name": "ControllerGrabInteractor",
+          "state": "Hover",
+          "candidate": "ISDK_HandGrabInteraction",
+          "body": "(1.50, 0.12, 1.16)",
+          "collider": [
+            {
+              "name": "ControllerGrabLocation",
+              "center": "(1.50, 0.12, 1.16)",
+              "size": "(0.10, 0.10, 0.10)"
+            }
+          ]
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\31797\\Desktop\\VR_Project_2026_2"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

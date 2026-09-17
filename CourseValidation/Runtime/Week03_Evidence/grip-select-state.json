@@ -1,0 +1,41 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var ball=UnityEngine.GameObject.Find(\"MissionObject\");return new {frame=UnityEngine.Time.frameCount,ball=ball.transform.position.ToString(),kinematic=ball.GetComponent<UnityEngine.Rigidbody>().isKinematic,interactors=UnityEngine.Object.FindObjectsByType<Oculus.Interaction.GrabInteractor>(UnityEngine.FindObjectsSortMode.None).Select(x=>new {state=x.State.ToString(),candidate=x.Candidate==null?\"null\":x.Candidate.name,selected=x.Interactable==null?\"null\":x.Interactable.transform.parent.name,body=x.Rigidbody.position.ToString()}).ToArray()};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "frame": 37160,
+        "ball": "(1.50, 0.21, 1.15)",
+        "kinematic": true,
+        "interactors": [
+          {
+            "state": "Normal",
+            "candidate": "null",
+            "selected": "null",
+            "body": "(0.90, 1.37, 1.13)"
+          },
+          {
+            "state": "Select",
+            "candidate": "ISDK_HandGrabInteraction",
+            "selected": "MissionObject",
+            "body": "(1.50, 0.12, 1.16)"
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\31797\\Desktop\\VR_Project_2026_2"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

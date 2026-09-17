@@ -1,0 +1,27 @@
+{
+  "timestamp": 1789627356.3050783,
+  "request": {
+    "tool": "openxr_set_controller_pose",
+    "arguments": {
+      "hand": "right",
+      "pose_type": "grip",
+      "position": [
+        0.2651945,
+        0.184999943,
+        -0.314615965
+      ],
+      "base_space": "local_floor",
+      "duration_seconds": 0.5
+    },
+    "label": "reach-ball"
+  },
+  "response": {
+    "isError": false,
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": true\n}"
+      }
+    ]
+  }
+}

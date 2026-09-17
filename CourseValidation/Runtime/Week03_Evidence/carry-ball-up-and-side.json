@@ -1,0 +1,27 @@
+{
+  "timestamp": 1789627406.301894,
+  "request": {
+    "tool": "openxr_set_controller_pose",
+    "arguments": {
+      "hand": "right",
+      "pose_type": "grip",
+      "position": [
+        0.4651945,
+        0.784999943,
+        -0.314615965
+      ],
+      "base_space": "local_floor",
+      "duration_seconds": 1
+    },
+    "label": "carry-ball-up-and-side"
+  },
+  "response": {
+    "isError": false,
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": true\n}"
+      }
+    ]
+  }
+}

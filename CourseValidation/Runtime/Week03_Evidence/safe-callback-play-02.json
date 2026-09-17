@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var type=typeof(CourseSetup.Meta205EditorLogCompatibility); return new {playing=UnityEngine.Application.isPlaying,frame=UnityEngine.Time.frameCount,elapsed=UnityEngine.Time.realtimeSinceStartup,compatibility=type.GetFields(System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Static).Where(f=>new[]{\"installed\",\"callbackErrors\",\"nativeMessageCount\",\"malformedUtf8Count\"}.Contains(f.Name)).ToDictionary(f=>f.Name,f=>f.GetValue(null))};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "playing": true,
+        "frame": 6319,
+        "elapsed": 107.691612,
+        "compatibility": {
+          "installed": true,
+          "callbackErrors": 0,
+          "nativeMessageCount": 72,
+          "malformedUtf8Count": 0
+        }
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\31797\\Desktop\\VR_Project_2026_2"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,21 @@
+{
+  "timestamp": 1789627477.987027,
+  "request": {
+    "tool": "openxr_set_controller_input",
+    "arguments": {
+      "hand": "right",
+      "component": "Grip",
+      "value": 0
+    },
+    "label": "release-ball"
+  },
+  "response": {
+    "isError": false,
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": true,\n  \"auto_release\": false\n}"
+      }
+    ]
+  }
+}

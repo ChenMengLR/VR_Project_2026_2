@@ -1,0 +1,216 @@
+{
+  "generatedUtc": "2026-09-17T07:00:33.291276+00:00",
+  "environment": {
+    "unity": "6000.3.24f1",
+    "core": "205.0.0",
+    "simulator": "205.0",
+    "platform": "Windows Editor",
+    "scene": "Assets/01_Scenes/Week03_Meta_Locomotion.unity"
+  },
+  "scope": "Desktop simulator validation only; no Quest or APK test.",
+  "checks": {
+    "teleport_to_start_with_thumbstick": true,
+    "target_official_hotspot_selected": true,
+    "teleport_start_to_target_with_thumbstick": true,
+    "start_head_yaw_90_target_head_yaw_270": true,
+    "right_grip_selects_mission_object": true,
+    "controller_movement_carries_ball_0_60_m_up": true,
+    "release_restores_dynamic_gravity": true,
+    "normal_play_without_operator_and_without_manual_null_callback": true,
+    "synthetic_invalid_utf8_preserves_raw_bytes": true,
+    "final_controllers_only": true,
+    "final_operator_disabled": true,
+    "external_editor_vscode": true,
+    "final_compile_and_console_errors_zero": true
+  },
+  "checkCount": 13,
+  "method": {
+    "runtime_input": "Official Meta XR Operator SSE/OpenXR controller input and pose tools",
+    "movement_mode": "Official MovingSetting.ControllerMovement.Value setter selected Teleport; UI click was not claimed.",
+    "head_input": "Orientation only; no head position override used for travel.",
+    "rig_or_ball_transform_override_in_play": false,
+    "interaction_session_log_callback": "Temporarily null native callback for diagnosis.",
+    "final_normal_play_log_callback": "Editor-only safe UTF8 callback; logs preserved; no manual null callback."
+  },
+  "headAfterStart": {
+    "path": "OVRCameraRig/TrackingSpace/CenterEyeAnchor",
+    "active": true,
+    "position": {
+      "x": -1.40349996089935,
+      "y": 1.72153520584106,
+      "z": 0.750000059604645
+    },
+    "rotation": {
+      "x": 0,
+      "y": 90,
+      "z": 0
+    },
+    "scale": {
+      "x": 0.999999940395355,
+      "y": 1,
+      "z": 0.999999940395355
+    }
+  },
+  "headAfterTarget": {
+    "path": "OVRCameraRig/TrackingSpace/CenterEyeAnchor",
+    "active": true,
+    "position": {
+      "x": 1.40349936485291,
+      "y": 1.72153520584106,
+      "z": 0.750000298023224
+    },
+    "rotation": {
+      "x": 0,
+      "y": 270,
+      "z": 0
+    },
+    "scale": {
+      "x": 1.00000011920929,
+      "y": 1,
+      "z": 1.00000011920929
+    }
+  },
+  "grabSelected": {
+    "frame": 37160,
+    "ball": "(1.50, 0.21, 1.15)",
+    "kinematic": true,
+    "interactors": [
+      {
+        "state": "Normal",
+        "candidate": "null",
+        "selected": "null",
+        "body": "(0.90, 1.37, 1.13)"
+      },
+      {
+        "state": "Select",
+        "candidate": "ISDK_HandGrabInteraction",
+        "selected": "MissionObject",
+        "body": "(1.50, 0.12, 1.16)"
+      }
+    ]
+  },
+  "grabCarried": {
+    "frame": 38390,
+    "ball": [
+      1.67888141,
+      0.806535065,
+      1.23944271
+    ],
+    "kinematic": true,
+    "interactors": [
+      {
+        "state": "Normal",
+        "selected": "null",
+        "body": "(0.90, 1.37, 1.13)"
+      },
+      {
+        "state": "Select",
+        "selected": "MissionObject",
+        "body": "(1.68, 0.72, 1.25)"
+      }
+    ]
+  },
+  "grabReleased": {
+    "frame": 43275,
+    "ball": [
+      1.64230478,
+      0.206535041,
+      1.31259513
+    ],
+    "kinematic": false,
+    "gravity": true,
+    "interactors": [
+      {
+        "state": "Normal",
+        "selected": "null"
+      },
+      {
+        "state": "Normal",
+        "selected": "null"
+      }
+    ]
+  },
+  "normalPlayBeforeSyntheticTest": {
+    "playing": true,
+    "frame": 5301,
+    "elapsed": 94.40959,
+    "handConfig": "ControllersOnly",
+    "xrActive": true,
+    "compatibility": {
+      "rawPath": "C:\\Users\\31797\\Desktop\\VR_Project_2026_2\\Logs\\Meta205Native\\native-20260917-065402-1633768.jsonl",
+      "installed": true,
+      "callbackErrors": 0,
+      "nativeMessageCount": 41,
+      "malformedUtf8Count": 0
+    }
+  },
+  "syntheticTest": {
+    "playing": true,
+    "frame": 7401,
+    "elapsed": 125.559326,
+    "compatibility": {
+      "rawPath": "C:\\Users\\31797\\Desktop\\VR_Project_2026_2\\Logs\\Meta205Native\\native-20260917-065402-1633768.jsonl",
+      "installed": true,
+      "callbackErrors": 0,
+      "nativeMessageCount": 42,
+      "malformedUtf8Count": 1
+    },
+    "apiLayers": false
+  },
+  "finalEditor": {
+    "playing": false,
+    "scene": "Assets/01_Scenes/Week03_Meta_Locomotion.unity",
+    "dirty": true,
+    "handTracking": "ControllersOnly",
+    "apiLayers": false,
+    "operatorLayer": false,
+    "externalEditor": "D:\\Microsoft VS Code\\Code.exe",
+    "controllerProfiles": [
+      "Meta.XR.MetaXRFeature",
+      "Meta.XR.MetaXRFoveationFeature",
+      "UnityEngine.XR.OpenXR.Features.Interactions.OculusTouchControllerProfile",
+      "Meta.XR.OculusTouchControllerProximityProfile"
+    ],
+    "zones": [
+      {
+        "name": "StartZone",
+        "position": "(-1.50, 0.09, 0.75)"
+      },
+      {
+        "name": "TargetZone",
+        "position": "(1.50, 0.09, 0.75)"
+      },
+      {
+        "name": "MissionObject",
+        "position": "(1.50, 1.14, 1.15)"
+      }
+    ]
+  },
+  "finalConsole": {
+    "sampledUtc": "2026-09-17T06:57:12.3329859Z",
+    "ageMs": 15,
+    "compilationFailed": false,
+    "compiling": false,
+    "consoleErrors": 0,
+    "consoleWarnings": 33,
+    "consoleLogs": 127,
+    "seeded": true
+  },
+  "limitations": [
+    "Full interaction run and final safe-callback/no-Operator stability run are separate sessions.",
+    "Initial unpatched Core205 native log callback terminated the Editor; safe bridge cannot protect SDK initialization before its installation.",
+    "One earlier Simulator reentry ended its XR session with an SES connection failure; later normal reentries succeeded.",
+    "Synthetic invalid UTF8 test is deliberate test data, not a naturally recurring crash sample.",
+    "No Quest hardware, Android APK, instructor submission, continuous screen recording, or human keyboard/mouse UI route was verified.",
+    "Sparse screenshots are keyframes, not a continuous video."
+  ],
+  "images": [
+    "Week03_01_Start_Teleported.png",
+    "Week03_02_Target_Teleport_Hover.png",
+    "Week03_03_Target_Teleported.png",
+    "Week03_04_Grab_Selected.png",
+    "Week03_05_Grab_Carried.png",
+    "Week03_06_Grab_Released.png",
+    "Week03_07_Normal_Simulator_No_Operator.png"
+  ]
+}

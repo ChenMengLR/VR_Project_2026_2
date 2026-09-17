@@ -11,9 +11,9 @@ WANG HAOBIN 的个人 VR 课程项目。第 2 周使用 Unity XR Interaction Too
 - `Course > Open Week 02 Computer Practice`：打开第 2 周场景、关闭 Meta 模拟器及桌面 OpenXR 自动启动，使用 XRI 键鼠模拟器。
 - `Course > Open Week 03 Computer Practice`：打开第 3 周场景，启用桌面 OpenXR 自动启动及本机 Meta 模拟器。
 
-第 2 周在 Game 窗口取得焦点后，可用 H、[、] 选择头/左右手，WASD 移动，鼠标右键旋转，G 抓取，抓取中 T 激活，松开 G 释放。具体输入以官方模拟器屏幕提示为准。
+第 2 周点击 Game 获得焦点后，用 WASD 移动，H 切换头部，[ / ] 选择左/右设备。G 抓取右手、T 激活右手；左手加 Shift。反复按同一括号会切换 Controller/Hand，练习时保持 Controller。详见 Docs 中的课程指南。
 
-第 3 周使用 Meta 模拟器自身的 Input Bindings，打开课程示例的 Locomotion Settings 切换 Slide/Teleport、Snap/Smooth Turn。不要将第 2 周按键直接套用到第 3 周。
+第 3 周本机 Simulator 205 绑定为 M 菜单、Y 摇杆向上、U 抓握、T Trigger。I 是按下摇杆，不是向上。打开 Locomotion Settings 切换 Slide/Teleport、Snap/Smooth Turn；按键以本机 Input Bindings 为准。
 
 ## 环境版本
 
@@ -35,7 +35,9 @@ Windows 和 Android 已配置 OpenXR/Oculus Touch，Android 启用 Meta Quest Su
 - 两周场景均已编译、执行构建器并通过结构检查，Missing Script 为 0。
 - 第 2 周在真实 Play Mode 中完成 79 项自动 API 交互检查，全部通过；检查物理落地、六类 XRI 事件、材质颜色、实际跟随、释放与物体独立性，无运行错误。
 - [第 2 周运行报告](CourseValidation/Runtime/Week02_Runtime.md)、[机器可读结果](CourseValidation/Runtime/Week02_Runtime.json)、[连续相机测试视频](CourseValidation/Week02_Automated_Play_Test.mp4)。视频 1280×720，8 fps，约 15.9 秒，记录自动验证过程。
-- 第 3 周真实模拟器运行验证正在处理，后续状态写入单独运行报告。结构通过不等于传送抓取运行通过。
+- [第 2 周虚拟键盘输入检查](CourseValidation/Runtime/Week02_KeyboardInput.md) 一次通过：G → G+T → G → 释放，经官方模拟器触发真实 Select / Activate / Deactivate / SelectExit。临时输入设备与设置已恢复。
+- [第 3 周运行报告](CourseValidation/Runtime/Week03_Runtime.md)：实际 Meta 控制器输入完成 StartZone → TargetZone 传送、抓球、抬升 0.60 m 与释放落地；另一个关闭 Operator 的普通 Simulator 会话持续 125.6 秒 / 7,401 帧。截图是关键帧，未生成连续 W3 录像。
+- Meta 205 的 Windows Editor 原生日志解码异常使用项目内兼容脚本处理，原始日志保留于忽略的 Logs 目录。初始化窗口和早期一次 SES 重入失败的边界见运行报告。
 
 测试视频和截图属于自动协助验证，不能声称为学生本人键鼠演示或 Quest 真机录像。真实运行报告会明确记录验证方式及范围。
 
@@ -45,7 +47,7 @@ Windows 和 Android 已配置 OpenXR/Oculus Touch，Android 启用 Meta Quest Su
 
 第 3 周：个人仓库链接、Quest 真机连续演示 Start → Teleport → Grab → Release。电脑模拟器证据不能替代课程要求的真机视频。
 
-GitHub 上传与 Notion 作业提交是两个步骤。当前尚未填写个人作业卡，也未完成团队选题、团队卡与真机小组演示。仓库为私有，老师需获得访问权限后才能查看。
+GitHub 上传与 Notion 作业提交是两个步骤。[个人作业卡](https://app.notion.com/p/Wang-Haobin-3d67c00fe5ad81288de5d923b15cf0d2) 已找到，两周均未提交；当前可读界面没有编辑控件，连接器也无法访问。需课程管理员确认编辑权限后填写仓库和附件。尚缺 ExtensionObject Inspector 界面截图、Quest 真机视频和团队任务。仓库为私有，老师需获得访问权限后查看。
 
 ## 保存并上传新版本
 

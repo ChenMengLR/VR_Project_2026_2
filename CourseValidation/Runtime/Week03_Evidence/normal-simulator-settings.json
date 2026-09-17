@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var config=OVRProjectConfig.CachedProjectConfig; var before=config.handTrackingSupport.ToString();config.handTrackingSupport=OVRProjectConfig.HandTrackingSupport.ControllersOnly; OVRProjectConfig.CommitProjectConfig(config);var menu=UnityEditor.EditorApplication.ExecuteMenuItem(\"Meta/Meta XR Operator/Deactivate\");var settings=UnityEngine.XR.OpenXR.OpenXRSettings.GetSettingsForBuildTargetGroup(UnityEditor.BuildTargetGroup.Standalone);var layers=settings.GetFeature<UnityEngine.XR.OpenXR.Features.ApiLayersFeature>(); layers.enabled=false;UnityEditor.EditorUtility.SetDirty(layers);UnityEditor.AssetDatabase.SaveAssets();return new {handBefore=before,handAfter=config.handTrackingSupport.ToString(),operatorDeactivateMenu=menu,apiLayersEnabled=layers.enabled,operatorEnabled=layers.apiLayers.IsEnabled(\"XR_APILAYER_METAX_operator\",System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture),metaFeature=settings.GetFeatures<UnityEngine.XR.OpenXR.Features.OpenXRFeature>().Where(f=>f.GetType().FullName==\"Meta.XR.MetaXRFeature\").Select(f=>f.enabled).ToArray(),processRuntime=System.Environment.GetEnvironmentVariable(\"XR_RUNTIME_JSON\")};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "handBefore": "ControllersAndHands",
+        "handAfter": "ControllersOnly",
+        "operatorDeactivateMenu": true,
+        "apiLayersEnabled": false,
+        "operatorEnabled": false,
+        "metaFeature": [
+          true
+        ],
+        "processRuntime": "C:\\Program Files\\MetaXRSimulator\\v205.0\\meta_openxr_simulator.json"
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\31797\\Desktop\\VR_Project_2026_2"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

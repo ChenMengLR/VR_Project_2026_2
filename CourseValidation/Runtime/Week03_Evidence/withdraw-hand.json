@@ -1,0 +1,27 @@
+{
+  "timestamp": 1789627478.0034041,
+  "request": {
+    "tool": "openxr_set_controller_pose",
+    "arguments": {
+      "hand": "right",
+      "pose_type": "grip",
+      "position": [
+        0.4651945,
+        1.084999943,
+        -0.514615965
+      ],
+      "base_space": "local_floor",
+      "duration_seconds": 0.5
+    },
+    "label": "withdraw-hand"
+  },
+  "response": {
+    "isError": false,
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": true\n}"
+      }
+    ]
+  }
+}

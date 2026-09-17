@@ -1,0 +1,87 @@
+{
+  "keybindings": {
+    "BUTTON_A_X": [
+      "B",
+      "FaceDown"
+    ],
+    "BUTTON_B_Y": [
+      "N",
+      "FaceRight"
+    ],
+    "BUTTON_MENU_OCULUS": [
+      "M",
+      "Start"
+    ],
+    "CYCLE_INPUT_BACKWARD": [
+      "LeftBracket",
+      "DpadDown"
+    ],
+    "CYCLE_INPUT_FORWARD": [
+      "RightBracket",
+      "DpadUp"
+    ],
+    "DEFAULT": "Num1",
+    "GRAB": "Num4",
+    "MOVE_BACKWARD": "S",
+    "MOVE_DOWN": "F",
+    "MOVE_FORWARD": "W",
+    "MOVE_LEFT": "A",
+    "MOVE_RIGHT": "D",
+    "MOVE_UP": "R",
+    "PINCH": "Num3",
+    "POKE": "Num2",
+    "RESET_CONTROLLER_POSES": "Space",
+    "ROTATE_H_NEG": "RightArrow",
+    "ROTATE_H_POS": "LeftArrow",
+    "ROTATE_V_NEG": "DownArrow",
+    "ROTATE_V_POS": "UpArrow",
+    "SHIFT_KEY": "L1",
+    "STYLUS_FORCE": [
+      "Num4",
+      "FaceLeft"
+    ],
+    "THUMBREST_FORCE": [
+      "Num5",
+      "FaceDown"
+    ],
+    "THUMBREST_TOUCH": "Back",
+    "THUMBSTICK_DOWN": "H",
+    "THUMBSTICK_LEFT": "G",
+    "THUMBSTICK_PRESS": [
+      "I",
+      "R3"
+    ],
+    "THUMBSTICK_RIGHT": "J",
+    "THUMBSTICK_UP": "Y",
+    "THUMB_PROXIMITY": [
+      "Num6",
+      "FaceRight"
+    ],
+    "TILT_LEFT": [
+      "Q",
+      "DpadLeft"
+    ],
+    "TILT_RIGHT": [
+      "E",
+      "DpadRight"
+    ],
+    "TRIGGER_CURL": "Num1",
+    "TRIGGER_FORCE": [
+      "Num7",
+      "Start"
+    ],
+    "TRIGGER_HAND": [
+      "U",
+      "R1"
+    ],
+    "TRIGGER_INDEX": "T",
+    "TRIGGER_PROXIMITY": [
+      "Num3",
+      "FaceUp"
+    ],
+    "TRIGGER_SLIDE": [
+      "Num2",
+      "R1"
+    ]
+  }
+}

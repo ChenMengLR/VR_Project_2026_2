@@ -1,0 +1,25 @@
+{
+  "timestamp": 1789627265.7471387,
+  "tool": "openxr_set_controller_pose",
+  "arguments": {
+    "hand": "right",
+    "pose_type": "grip",
+    "orientation": [
+      0.242851347,
+      0.5265341,
+      -0.133597374,
+      0.803701937
+    ],
+    "base_space": "local_floor",
+    "duration_seconds": 0.5
+  },
+  "response": {
+    "isError": false,
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": true\n}"
+      }
+    ]
+  }
+}

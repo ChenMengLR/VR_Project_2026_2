@@ -1,0 +1,40 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var rig=UnityEngine.Object.FindFirstObjectByType<OVRCameraRig>(); var arc=rig.GetComponentsInChildren<UnityEngine.Transform>().Where(x=>x.name==\"ArcOrigin\").OrderBy(x=>(x.position-rig.rightHandAnchor.position).sqrMagnitude).First(); var oldLocal=new UnityEngine.Quaternion(-0.2163f,-0.6212f,-0.1532f,0.7375f).normalized; var offset=UnityEngine.Quaternion.Inverse(rig.trackingSpace.rotation*oldLocal)*arc.rotation; var target=UnityEngine.GameObject.Find(\"StartZone\").transform.position; var dir=target-arc.position; dir.y*=1.0f; var desired=UnityEngine.Quaternion.LookRotation(dir); var gripLocal=UnityEngine.Quaternion.Inverse(rig.trackingSpace.rotation)*desired*UnityEngine.Quaternion.Inverse(offset); return new {orientation=new float[]{-gripLocal.x,-gripLocal.y,gripLocal.z,gripLocal.w},arc=new float[]{arc.position.x,arc.position.y,arc.position.z},target=new float[]{target.x,target.y,target.z}};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "orientation": [
+          0.109662853,
+          0.596087,
+          -0.0421427563,
+          0.7942786
+        ],
+        "arc": [
+          -0.3531214,
+          1.35743546,
+          0.480273753
+        ],
+        "target": [
+          -1.5,
+          0.08903508,
+          0.75
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\31797\\Desktop\\VR_Project_2026_2"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

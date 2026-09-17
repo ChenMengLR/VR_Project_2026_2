@@ -1,0 +1,18 @@
+{
+  "timestamp": 1789627265.0472648,
+  "tool": "openxr_get_controller_pose",
+  "arguments": {
+    "hand": "right",
+    "pose_type": "grip",
+    "base_space": "local_floor"
+  },
+  "response": {
+    "isError": false,
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"pose\": {\n    \"position\": [\n      -0.2773,\n      1.37,\n      -0.474\n    ],\n    \"orientation\": [\n      0.1097,\n      0.5961,\n      -0.0421,\n      0.7943\n    ]\n  },\n  \"flags\": {\n    \"position_valid\": true,\n    \"orientation_valid\": true,\n    \"position_tracked\": true,\n    \"orientation_tracked\": true\n  },\n  \"is_active\": true,\n  \"simulated\": true\n}"
+      }
+    ]
+  }
+}

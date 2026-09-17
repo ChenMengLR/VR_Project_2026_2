@@ -1,0 +1,22 @@
+{
+  "timestamp": 1789627293.7138631,
+  "request": {
+    "tool": "openxr_set_controller_input",
+    "arguments": {
+      "hand": "right",
+      "component": "Thumbstick",
+      "sub_component": "Y",
+      "value": 0
+    },
+    "label": "target-teleport-confirm"
+  },
+  "response": {
+    "isError": false,
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": true,\n  \"auto_release\": false\n}"
+      }
+    ]
+  }
+}

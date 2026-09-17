@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "Unity.CodeEditor.CodeEditor.SetExternalScriptEditor(@\"D:\\Microsoft VS Code\\Code.exe\"); return new {externalEditor=Unity.CodeEditor.CodeEditor.CurrentEditorInstallation,compatibilityType=typeof(CourseSetup.Meta205EditorLogCompatibility).FullName,playing=UnityEditor.EditorApplication.isPlaying,controllers=UnityEngine.Object.FindFirstObjectByType<OVRManager>().enabled,methods=typeof(Unity.CodeEditor.CodeEditor).GetMethods().Where(m=>m.Name==\"SetExternalScriptEditor\").Select(m=>m.ToString()).ToArray()};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "externalEditor": "D:\\Microsoft VS Code\\Code.exe",
+        "compatibilityType": "CourseSetup.Meta205EditorLogCompatibility",
+        "playing": false,
+        "controllers": true,
+        "methods": [
+          "Void SetExternalScriptEditor(System.String)"
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\31797\\Desktop\\VR_Project_2026_2"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

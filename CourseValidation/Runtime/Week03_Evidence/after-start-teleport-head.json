@@ -1,0 +1,19 @@
+{
+  "timestamp": 1789627038.0075798,
+  "request": {
+    "tool": "unity_get_world_pose",
+    "arguments": {
+      "path": "OVRCameraRig/TrackingSpace/CenterEyeAnchor"
+    },
+    "label": "after-start-teleport-head"
+  },
+  "response": {
+    "isError": false,
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"matchCount\": 1,\n  \"matches\": [\n    {\n      \"path\": \"OVRCameraRig/TrackingSpace/CenterEyeAnchor\",\n      \"active\": true,\n      \"position\": {\n        \"x\": -1.40349996089935,\n        \"y\": 1.72153520584106,\n        \"z\": 0.750000059604645\n      },\n      \"rotation\": {\n        \"x\": 0,\n        \"y\": 90,\n        \"z\": 0\n      },\n      \"scale\": {\n        \"x\": 0.999999940395355,\n        \"y\": 1,\n        \"z\": 0.999999940395355\n      }\n    }\n  ],\n  \"tracking_origin\": {\n    \"OVR\": \"FloorLevel\",\n    \"OpenXR\": \"local_floor\"\n  }\n}"
+      }
+    ]
+  }
+}

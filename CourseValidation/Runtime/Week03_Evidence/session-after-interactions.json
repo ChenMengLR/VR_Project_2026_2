@@ -1,0 +1,17 @@
+{
+  "timestamp": 1789627480.6620073,
+  "request": {
+    "tool": "openxr_get_session_info",
+    "arguments": {},
+    "label": "session-after-interactions"
+  },
+  "response": {
+    "isError": false,
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"session\": {\n    \"handle\": \"65584\",\n    \"handle_hex\": \"0x10030\"\n  },\n  \"state\": {\n    \"value\": 5,\n    \"name\": \"XR_SESSION_STATE_FOCUSED\"\n  },\n  \"timestamp_utc\": {\n    \"unix_timestamp\": 1789626810.2908,\n    \"iso8601\": \"2026-09-17T06:33:30.290Z\"\n  }\n}"
+      }
+    ]
+  }
+}

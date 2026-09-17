@@ -114,24 +114,18 @@ namespace CourseSetup
 
             var taskRoot = new GameObject(TaskRootName);
             SceneManager.MoveGameObjectToScene(taskRoot, scene);
-            var rig = rigs[0];
-            Vector3 forward = Vector3.ProjectOnPlane(rig.transform.forward, Vector3.up).normalized;
-            if (forward.sqrMagnitude < 0.5f) forward = Vector3.forward;
-            Vector3 right = Vector3.Cross(Vector3.up, forward);
-            // Near the original spawn, with a clear three metre exercise route.
-            Vector3 start = rig.transform.position + right * 1.25f + forward * 0.75f;
-            Vector3 target = start + forward * 3.0f;
-            Physics.SyncTransforms();
-            start.y = FindGroundY(start, rig.transform.position.y) + 0.065f;
-            target.y = FindGroundY(target, rig.transform.position.y) + 0.065f;
-            var startZone = CreateZone("StartZone", start, Quaternion.LookRotation(forward), green, taskRoot.transform);
-            var targetZone = CreateZone("TargetZone", target, Quaternion.LookRotation(-forward), blue, taskRoot.transform);
+            // These courtyard positions match the saved scene and the Simulator-verified route.
+            // Keeping the route along X avoids the building doorway and its pillars.
+            Vector3 start = new Vector3(-1.5f, 0.08903508f, 0.75f);
+            Vector3 target = new Vector3(1.5f, 0.08903508f, 0.75f);
+            var startZone = CreateZone("StartZone", start, Quaternion.LookRotation(Vector3.right), green, taskRoot.transform);
+            var targetZone = CreateZone("TargetZone", target, Quaternion.LookRotation(Vector3.left), blue, taskRoot.transform);
 
             var mission = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             mission.name = "MissionObject";
             mission.transform.SetParent(taskRoot.transform, true);
             // Side offset keeps the landing centre free, while the ball begins over the target disc.
-            mission.transform.position = target + right * 0.40f + Vector3.up * 1.05f;
+            mission.transform.position = target + new Vector3(0f, 1.05f, 0.4f);
             mission.transform.localScale = Vector3.one * 0.24f;
             mission.GetComponent<Renderer>().sharedMaterial = orange;
             var body = mission.AddComponent<Rigidbody>();

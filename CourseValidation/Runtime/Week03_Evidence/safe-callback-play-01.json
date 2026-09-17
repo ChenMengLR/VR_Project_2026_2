@@ -1,0 +1,34 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "UnityEngine.Application.runInBackground=true; var type=typeof(CourseSetup.Meta205EditorLogCompatibility); return new {playing=UnityEngine.Application.isPlaying,frame=UnityEngine.Time.frameCount,compatibility=type.GetFields(System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Static).Where(f=>new[]{\"installed\",\"installedManagerId\",\"rawPath\",\"callbackErrors\",\"nativeMessageCount\",\"malformedUtf8Count\"}.Contains(f.Name)).ToDictionary(f=>f.Name,f=>f.GetValue(null))};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "playing": true,
+        "frame": 1934,
+        "compatibility": {
+          "rawPath": "C:\\Users\\31797\\Desktop\\VR_Project_2026_2\\Logs\\Meta205Native\\native-20260917-064745-5083939.jsonl",
+          "installedManagerId": -2524,
+          "installed": true,
+          "callbackErrors": 0,
+          "nativeMessageCount": 72,
+          "malformedUtf8Count": 0
+        }
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\31797\\Desktop\\VR_Project_2026_2"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
