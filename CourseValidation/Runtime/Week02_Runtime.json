@@ -1,0 +1,426 @@
+{
+    "generatedUtc": "2026-09-17T06:21:10.4121432Z",
+    "unityVersion": "6000.3.24f1",
+    "graphicsDevice": "Direct3D11 / NVIDIA GeForce RTX 5080 Laptop GPU",
+    "mode": "Real Unity Play Mode; automatic XRI API/input interaction",
+    "humanSimulator": "NOT_TESTED: no human keyboard/mouse or headset demonstration",
+    "frameDirectory": "C:\\Users\\31797\\Desktop\\VR_Project_2026_2\\CourseValidation\\Frames\\Week02\\20260917-062111-704",
+    "videoFramesPerSecond": 8,
+    "capturedFrameCount": 127,
+    "capturedSimulationSeconds": 15.75,
+    "passed": true,
+    "checks": [
+        {
+            "name": "PracticeCube dynamic Rigidbody and solid Collider",
+            "passed": true,
+            "evidence": "gravity=True, kinematic=False, mass=1.00"
+        },
+        {
+            "name": "GrabCube_02 dynamic Rigidbody and solid Collider",
+            "passed": true,
+            "evidence": "gravity=True, kinematic=False, mass=1.00"
+        },
+        {
+            "name": "ExtensionObject dynamic Rigidbody and solid Collider",
+            "passed": true,
+            "evidence": "gravity=True, kinematic=False, mass=2.50"
+        },
+        {
+            "name": "PracticeCube gravity moved object down",
+            "passed": true,
+            "evidence": "startY=1.000, endY=0.500, drop=0.500 m"
+        },
+        {
+            "name": "PracticeCube initial floor landing",
+            "passed": true,
+            "evidence": "collider.bottomY=0.0000 m, linearSpeed=0.0000 m/s, sleeping=True"
+        },
+        {
+            "name": "GrabCube_02 gravity moved object down",
+            "passed": true,
+            "evidence": "startY=1.000, endY=0.400, drop=0.600 m"
+        },
+        {
+            "name": "GrabCube_02 initial floor landing",
+            "passed": true,
+            "evidence": "collider.bottomY=0.0000 m, linearSpeed=0.0000 m/s, sleeping=True"
+        },
+        {
+            "name": "ExtensionObject gravity moved object down",
+            "passed": true,
+            "evidence": "startY=1.300, endY=0.325, drop=0.975 m"
+        },
+        {
+            "name": "ExtensionObject initial floor landing",
+            "passed": true,
+            "evidence": "collider.bottomY=0.0000 m, linearSpeed=0.0000 m/s, sleeping=True"
+        },
+        {
+            "name": "Camera render 01_initial_landed",
+            "passed": true,
+            "evidence": "Actual URP Camera -> RenderTexture -> PNG, 1280 x 720"
+        },
+        {
+            "name": "PracticeCube feedback exists",
+            "passed": true,
+            "evidence": "GrabVisualFeedback component"
+        },
+        {
+            "name": "PracticeCube manager HoverEnter",
+            "passed": true,
+            "evidence": "hoverEntered=1, hoverExited=0, selectEntered=0, selectExited=0, activated=0, deactivated=0"
+        },
+        {
+            "name": "PracticeCube hover: yellow",
+            "passed": true,
+            "evidence": "Renderer _BaseColor actual=RGBA(1.000, 0.922, 0.016, 1.000), expected=RGBA(1.000, 0.922, 0.016, 1.000); XRI hovered=True, selected=False"
+        },
+        {
+            "name": "Camera render PracticeCube_02_hover",
+            "passed": true,
+            "evidence": "Actual URP Camera -> RenderTexture -> PNG, 1280 x 720"
+        },
+        {
+            "name": "PracticeCube manager SelectEnter",
+            "passed": true,
+            "evidence": "hoverEntered=1, hoverExited=0, selectEntered=1, selectExited=0, activated=0, deactivated=0"
+        },
+        {
+            "name": "PracticeCube selection takes priority over hover: green",
+            "passed": true,
+            "evidence": "Renderer _BaseColor actual=RGBA(0.000, 1.000, 0.000, 1.000), expected=RGBA(0.000, 1.000, 0.000, 1.000); XRI hovered=True, selected=True"
+        },
+        {
+            "name": "PracticeCube actual XRI follow",
+            "passed": true,
+            "evidence": "objectMoved=1.230 m, attachError=0.000 m; only interactor transform moved"
+        },
+        {
+            "name": "Camera render PracticeCube_03_selected_follow",
+            "passed": true,
+            "evidence": "Actual URP Camera -> RenderTexture -> PNG, 1280 x 720"
+        },
+        {
+            "name": "PracticeCube official input Activate",
+            "passed": true,
+            "evidence": "hoverEntered=1, hoverExited=0, selectEntered=1, selectExited=0, activated=1, deactivated=0"
+        },
+        {
+            "name": "PracticeCube activation takes priority: magenta",
+            "passed": true,
+            "evidence": "Renderer _BaseColor actual=RGBA(1.000, 0.000, 1.000, 1.000), expected=RGBA(1.000, 0.000, 1.000, 1.000); XRI hovered=True, selected=True"
+        },
+        {
+            "name": "Camera render PracticeCube_04_activated",
+            "passed": true,
+            "evidence": "Actual URP Camera -> RenderTexture -> PNG, 1280 x 720"
+        },
+        {
+            "name": "PracticeCube selected and activated after hover exit",
+            "passed": true,
+            "evidence": "hoverEntered=1, hoverExited=1, selectEntered=1, selectExited=0, activated=1, deactivated=0"
+        },
+        {
+            "name": "PracticeCube hover exit must preserve activation: magenta",
+            "passed": true,
+            "evidence": "Renderer _BaseColor actual=RGBA(1.000, 0.000, 1.000, 1.000), expected=RGBA(1.000, 0.000, 1.000, 1.000); XRI hovered=False, selected=True"
+        },
+        {
+            "name": "PracticeCube official input Deactivate",
+            "passed": true,
+            "evidence": "hoverEntered=1, hoverExited=1, selectEntered=1, selectExited=0, activated=1, deactivated=1"
+        },
+        {
+            "name": "PracticeCube deactivated but selected: green",
+            "passed": true,
+            "evidence": "Renderer _BaseColor actual=RGBA(0.000, 1.000, 0.000, 1.000), expected=RGBA(0.000, 1.000, 0.000, 1.000); XRI hovered=False, selected=True"
+        },
+        {
+            "name": "PracticeCube hover enter must preserve selection: green",
+            "passed": true,
+            "evidence": "Renderer _BaseColor actual=RGBA(0.000, 1.000, 0.000, 1.000), expected=RGBA(0.000, 1.000, 0.000, 1.000); XRI hovered=True, selected=True"
+        },
+        {
+            "name": "PracticeCube manager SelectExit",
+            "passed": true,
+            "evidence": "hoverEntered=2, hoverExited=1, selectEntered=1, selectExited=1, activated=1, deactivated=1"
+        },
+        {
+            "name": "PracticeCube released while hovered: yellow",
+            "passed": true,
+            "evidence": "Renderer _BaseColor actual=RGBA(1.000, 0.922, 0.016, 1.000), expected=RGBA(1.000, 0.922, 0.016, 1.000); XRI hovered=True, selected=False"
+        },
+        {
+            "name": "PracticeCube hover exited after release: cyan",
+            "passed": true,
+            "evidence": "Renderer _BaseColor actual=RGBA(0.000, 1.000, 1.000, 1.000), expected=RGBA(0.000, 1.000, 1.000, 1.000); XRI hovered=False, selected=False"
+        },
+        {
+            "name": "PracticeCube all six real XRI events",
+            "passed": true,
+            "evidence": "hoverEntered=2, hoverExited=2, selectEntered=1, selectExited=1, activated=1, deactivated=1"
+        },
+        {
+            "name": "PracticeCube released gravity",
+            "passed": true,
+            "evidence": "releaseY=1.600, landedY=0.500, drop=1.100 m"
+        },
+        {
+            "name": "PracticeCube released floor landing",
+            "passed": true,
+            "evidence": "collider.bottomY=0.0000 m, linearSpeed=0.0000 m/s, sleeping=True"
+        },
+        {
+            "name": "PracticeCube independent from GrabCube_02",
+            "passed": true,
+            "evidence": "other object moved=0.000 m"
+        },
+        {
+            "name": "PracticeCube independent from ExtensionObject",
+            "passed": true,
+            "evidence": "other object moved=0.000 m"
+        },
+        {
+            "name": "Camera render PracticeCube_05_released_landed",
+            "passed": true,
+            "evidence": "Actual URP Camera -> RenderTexture -> PNG, 1280 x 720"
+        },
+        {
+            "name": "GrabCube_02 feedback exists",
+            "passed": true,
+            "evidence": "GrabVisualFeedback component"
+        },
+        {
+            "name": "GrabCube_02 manager HoverEnter",
+            "passed": true,
+            "evidence": "hoverEntered=1, hoverExited=0, selectEntered=0, selectExited=0, activated=0, deactivated=0"
+        },
+        {
+            "name": "GrabCube_02 hover: yellow",
+            "passed": true,
+            "evidence": "Renderer _BaseColor actual=RGBA(1.000, 0.922, 0.016, 1.000), expected=RGBA(1.000, 0.922, 0.016, 1.000); XRI hovered=True, selected=False"
+        },
+        {
+            "name": "Camera render GrabCube_02_02_hover",
+            "passed": true,
+            "evidence": "Actual URP Camera -> RenderTexture -> PNG, 1280 x 720"
+        },
+        {
+            "name": "GrabCube_02 manager SelectEnter",
+            "passed": true,
+            "evidence": "hoverEntered=1, hoverExited=0, selectEntered=1, selectExited=0, activated=0, deactivated=0"
+        },
+        {
+            "name": "GrabCube_02 selection takes priority over hover: green",
+            "passed": true,
+            "evidence": "Renderer _BaseColor actual=RGBA(0.000, 1.000, 0.000, 1.000), expected=RGBA(0.000, 1.000, 0.000, 1.000); XRI hovered=True, selected=True"
+        },
+        {
+            "name": "GrabCube_02 actual XRI follow",
+            "passed": true,
+            "evidence": "objectMoved=1.230 m, attachError=0.000 m; only interactor transform moved"
+        },
+        {
+            "name": "Camera render GrabCube_02_03_selected_follow",
+            "passed": true,
+            "evidence": "Actual URP Camera -> RenderTexture -> PNG, 1280 x 720"
+        },
+        {
+            "name": "GrabCube_02 official input Activate",
+            "passed": true,
+            "evidence": "hoverEntered=1, hoverExited=0, selectEntered=1, selectExited=0, activated=1, deactivated=0"
+        },
+        {
+            "name": "GrabCube_02 activation takes priority: magenta",
+            "passed": true,
+            "evidence": "Renderer _BaseColor actual=RGBA(1.000, 0.000, 1.000, 1.000), expected=RGBA(1.000, 0.000, 1.000, 1.000); XRI hovered=True, selected=True"
+        },
+        {
+            "name": "Camera render GrabCube_02_04_activated",
+            "passed": true,
+            "evidence": "Actual URP Camera -> RenderTexture -> PNG, 1280 x 720"
+        },
+        {
+            "name": "GrabCube_02 selected and activated after hover exit",
+            "passed": true,
+            "evidence": "hoverEntered=1, hoverExited=1, selectEntered=1, selectExited=0, activated=1, deactivated=0"
+        },
+        {
+            "name": "GrabCube_02 hover exit must preserve activation: magenta",
+            "passed": true,
+            "evidence": "Renderer _BaseColor actual=RGBA(1.000, 0.000, 1.000, 1.000), expected=RGBA(1.000, 0.000, 1.000, 1.000); XRI hovered=False, selected=True"
+        },
+        {
+            "name": "GrabCube_02 official input Deactivate",
+            "passed": true,
+            "evidence": "hoverEntered=1, hoverExited=1, selectEntered=1, selectExited=0, activated=1, deactivated=1"
+        },
+        {
+            "name": "GrabCube_02 deactivated but selected: green",
+            "passed": true,
+            "evidence": "Renderer _BaseColor actual=RGBA(0.000, 1.000, 0.000, 1.000), expected=RGBA(0.000, 1.000, 0.000, 1.000); XRI hovered=False, selected=True"
+        },
+        {
+            "name": "GrabCube_02 hover enter must preserve selection: green",
+            "passed": true,
+            "evidence": "Renderer _BaseColor actual=RGBA(0.000, 1.000, 0.000, 1.000), expected=RGBA(0.000, 1.000, 0.000, 1.000); XRI hovered=True, selected=True"
+        },
+        {
+            "name": "GrabCube_02 manager SelectExit",
+            "passed": true,
+            "evidence": "hoverEntered=2, hoverExited=1, selectEntered=1, selectExited=1, activated=1, deactivated=1"
+        },
+        {
+            "name": "GrabCube_02 released while hovered: yellow",
+            "passed": true,
+            "evidence": "Renderer _BaseColor actual=RGBA(1.000, 0.922, 0.016, 1.000), expected=RGBA(1.000, 0.922, 0.016, 1.000); XRI hovered=True, selected=False"
+        },
+        {
+            "name": "GrabCube_02 hover exited after release: cyan",
+            "passed": true,
+            "evidence": "Renderer _BaseColor actual=RGBA(0.000, 1.000, 1.000, 1.000), expected=RGBA(0.000, 1.000, 1.000, 1.000); XRI hovered=False, selected=False"
+        },
+        {
+            "name": "GrabCube_02 all six real XRI events",
+            "passed": true,
+            "evidence": "hoverEntered=2, hoverExited=2, selectEntered=1, selectExited=1, activated=1, deactivated=1"
+        },
+        {
+            "name": "GrabCube_02 released gravity",
+            "passed": true,
+            "evidence": "releaseY=1.500, landedY=0.400, drop=1.100 m"
+        },
+        {
+            "name": "GrabCube_02 released floor landing",
+            "passed": true,
+            "evidence": "collider.bottomY=0.0000 m, linearSpeed=0.0000 m/s, sleeping=True"
+        },
+        {
+            "name": "GrabCube_02 independent from PracticeCube",
+            "passed": true,
+            "evidence": "other object moved=0.000 m"
+        },
+        {
+            "name": "GrabCube_02 independent from ExtensionObject",
+            "passed": true,
+            "evidence": "other object moved=0.000 m"
+        },
+        {
+            "name": "Camera render GrabCube_02_05_released_landed",
+            "passed": true,
+            "evidence": "Actual URP Camera -> RenderTexture -> PNG, 1280 x 720"
+        },
+        {
+            "name": "ExtensionObject manager HoverEnter",
+            "passed": true,
+            "evidence": "hoverEntered=1, hoverExited=0, selectEntered=0, selectExited=0, activated=0, deactivated=0"
+        },
+        {
+            "name": "Camera render ExtensionObject_02_hover",
+            "passed": true,
+            "evidence": "Actual URP Camera -> RenderTexture -> PNG, 1280 x 720"
+        },
+        {
+            "name": "ExtensionObject manager SelectEnter",
+            "passed": true,
+            "evidence": "hoverEntered=1, hoverExited=0, selectEntered=1, selectExited=0, activated=0, deactivated=0"
+        },
+        {
+            "name": "ExtensionObject actual XRI follow",
+            "passed": true,
+            "evidence": "objectMoved=1.230 m, attachError=0.000 m; only interactor transform moved"
+        },
+        {
+            "name": "Camera render ExtensionObject_03_selected_follow",
+            "passed": true,
+            "evidence": "Actual URP Camera -> RenderTexture -> PNG, 1280 x 720"
+        },
+        {
+            "name": "ExtensionObject official input Activate",
+            "passed": true,
+            "evidence": "hoverEntered=1, hoverExited=0, selectEntered=1, selectExited=0, activated=1, deactivated=0"
+        },
+        {
+            "name": "Camera render ExtensionObject_04_activated",
+            "passed": true,
+            "evidence": "Actual URP Camera -> RenderTexture -> PNG, 1280 x 720"
+        },
+        {
+            "name": "ExtensionObject selected and activated after hover exit",
+            "passed": true,
+            "evidence": "hoverEntered=1, hoverExited=1, selectEntered=1, selectExited=0, activated=1, deactivated=0"
+        },
+        {
+            "name": "ExtensionObject official input Deactivate",
+            "passed": true,
+            "evidence": "hoverEntered=1, hoverExited=1, selectEntered=1, selectExited=0, activated=1, deactivated=1"
+        },
+        {
+            "name": "ExtensionObject manager SelectExit",
+            "passed": true,
+            "evidence": "hoverEntered=2, hoverExited=1, selectEntered=1, selectExited=1, activated=1, deactivated=1"
+        },
+        {
+            "name": "ExtensionObject all six real XRI events",
+            "passed": true,
+            "evidence": "hoverEntered=2, hoverExited=2, selectEntered=1, selectExited=1, activated=1, deactivated=1"
+        },
+        {
+            "name": "ExtensionObject released gravity",
+            "passed": true,
+            "evidence": "releaseY=1.425, landedY=0.325, drop=1.100 m"
+        },
+        {
+            "name": "ExtensionObject released floor landing",
+            "passed": true,
+            "evidence": "collider.bottomY=0.0000 m, linearSpeed=0.0000 m/s, sleeping=True"
+        },
+        {
+            "name": "ExtensionObject independent from PracticeCube",
+            "passed": true,
+            "evidence": "other object moved=0.000 m"
+        },
+        {
+            "name": "ExtensionObject independent from GrabCube_02",
+            "passed": true,
+            "evidence": "other object moved=0.000 m"
+        },
+        {
+            "name": "Camera render ExtensionObject_05_released_landed",
+            "passed": true,
+            "evidence": "Actual URP Camera -> RenderTexture -> PNG, 1280 x 720"
+        },
+        {
+            "name": "Camera render 09_all_released",
+            "passed": true,
+            "evidence": "Actual URP Camera -> RenderTexture -> PNG, 1280 x 720"
+        },
+        {
+            "name": "Continuous camera frames",
+            "passed": true,
+            "evidence": "frames=127, fps=8, simulated seconds=15.750; directory=C:\\Users\\31797\\Desktop\\VR_Project_2026_2\\CourseValidation\\Frames\\Week02\\20260917-062111-704"
+        },
+        {
+            "name": "No Unity Error/Exception during validation",
+            "passed": true,
+            "evidence": ""
+        }
+    ],
+    "screenshots": [
+        "01_initial_landed.png",
+        "PracticeCube_02_hover.png",
+        "PracticeCube_03_selected_follow.png",
+        "PracticeCube_04_activated.png",
+        "PracticeCube_05_released_landed.png",
+        "GrabCube_02_02_hover.png",
+        "GrabCube_02_03_selected_follow.png",
+        "GrabCube_02_04_activated.png",
+        "GrabCube_02_05_released_landed.png",
+        "ExtensionObject_02_hover.png",
+        "ExtensionObject_03_selected_follow.png",
+        "ExtensionObject_04_activated.png",
+        "ExtensionObject_05_released_landed.png",
+        "09_all_released.png"
+    ],
+    "unityErrors": []
+}

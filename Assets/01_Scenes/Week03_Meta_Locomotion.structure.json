@@ -1,0 +1,33 @@
+{
+    "generatedUtc": "2026-09-17T06:16:10.2942275Z",
+    "unityVersion": "6000.3.24f1",
+    "sdkVersion": "205.0.0",
+    "sourceScene": "Assets/Samples/Meta XR Interaction ​SDK/205.0.0/Example Scenes/LocomotionExamples.unity",
+    "sourceSha256": "4ddd83c17157b020545a2f1eeecff56ea55cfe239e6fc51253881b656a311429",
+    "originalSourceUnchanged": true,
+    "courseScene": "Assets/01_Scenes/Week03_Meta_Locomotion.unity",
+    "folderConvention": "Course scene: Assets/01_Scenes; official example remains in its original imported Samples directory.",
+    "cameraRigCount": 1,
+    "xriComponentCount": 0,
+    "locomotionSettingsUICount": 1,
+    "teleportInteractorCount": 5,
+    "controllerGrabInteractorCount": 2,
+    "missingScriptCount": 0,
+    "startHotspotConfigured": true,
+    "targetHotspotConfigured": true,
+    "missionGrabConfigured": true,
+    "missionGravityEnabled": true,
+    "missionDynamicBody": true,
+    "realHandTracking": "ControllersOnly",
+    "runtimeVerification": "NOT PERFORMED by this builder. Meta XR Simulator play, controls, rendering, physics, teleport and grab still require runtime verification.",
+    "notes": [
+        "Imported bundled TMP Essential Resources because no project TMP_Settings asset existed.",
+        "Original example rig, environment, slide/teleport selection and turn settings UI are retained.",
+        "StartZone and TargetZone use official Teleport Hotspots with SnapPositionAndRotation.",
+        "MissionObject starts above TargetZone with dynamic gravity; a runtime run is needed to verify its final resting position.",
+        "Real hand tracking is ControllersOnly. Official controller-driven hand visuals and default All interaction wiring are retained.",
+        "Course scene uses Assets/01_Scenes to match the numbered Week 02 convention; the official Samples scene remains at its imported path.",
+        "Scene placement and shader appearance still require visual inspection in Meta XR Simulator."
+    ],
+    "errors": []
+}
