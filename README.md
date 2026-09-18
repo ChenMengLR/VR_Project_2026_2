@@ -6,7 +6,7 @@ WANG HAOBIN 的个人 VR 课程项目。第 2 周使用 Unity XR Interaction Too
 
 ## 打开和练习
 
-本机项目：`C:\Users\31797\Desktop\VR_Project_2026_2`。双击根目录 `Open-Course.cmd`，或通过 Unity Hub 打开本目录。
+本机项目：`C:\Users\31797\Documents\ChatGPT\作业 3\VR_Project_2026_2`。双击根目录 `Open-Course.cmd`，或通过 Unity Hub 打开本目录。
 
 编辑器启动完成后，先确认 Console 没有编译错误。保存当前场景、退出 Play，再用以下菜单切换：
 

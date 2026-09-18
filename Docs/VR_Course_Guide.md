@@ -50,7 +50,7 @@
 
 ## 二、项目与文件夹约定
 
-课程项目名：`VR_Project_2026_2`，已创建在 `C:\Users\31797\Desktop\VR_Project_2026_2`。
+课程项目名：`VR_Project_2026_2`，已创建在 `C:\Users\31797\Documents\ChatGPT\作业 3\VR_Project_2026_2`。
 
 当前项目使用 **Unity 6 LTS → Universal 3D**，URP 17.3，Input System 1.20。直接打开现有项目即可。下面的建场景步骤用于理解和复现课程内容，不要求再建一份同名项目。
 

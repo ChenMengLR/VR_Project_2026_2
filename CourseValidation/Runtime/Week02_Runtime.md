@@ -11,7 +11,7 @@
 Rig Interactor 和 Simulator 仅在自动测试期间暂停，以避免争抢；结束时恢复，并退出 Play Mode。测试没有保存运行时场景修改。
 
 录像来源：实际观察相机连续帧，Time.captureFramerate=8 固定模拟时间步；共 127 帧，约 15.88 秒。录制墙钟耗时可能更长。此录像应标为“自动 API 交互测试”，不能标为学生亲自操作录像。
-帧目录：`C:\Users\31797\Desktop\VR_Project_2026_2\CourseValidation\Frames\Week02\20260917-062111-704`
+帧目录：`C:\Users\31797\Documents\ChatGPT\作业 3\VR_Project_2026_2\CourseValidation\Frames\Week02\20260917-062111-704`
 
 - [x] **PracticeCube dynamic Rigidbody and solid Collider** — gravity=True, kinematic=False, mass=1.00
 - [x] **GrabCube_02 dynamic Rigidbody and solid Collider** — gravity=True, kinematic=False, mass=1.00
@@ -90,7 +90,7 @@ Rig Interactor 和 Simulator 仅在自动测试期间暂停，以避免争抢；
 - [x] **ExtensionObject independent from GrabCube_02** — other object moved=0.000 m
 - [x] **Camera render ExtensionObject_05_released_landed** — Actual URP Camera -> RenderTexture -> PNG, 1280 x 720
 - [x] **Camera render 09_all_released** — Actual URP Camera -> RenderTexture -> PNG, 1280 x 720
-- [x] **Continuous camera frames** — frames=127, fps=8, simulated seconds=15.750; directory=C:\Users\31797\Desktop\VR_Project_2026_2\CourseValidation\Frames\Week02\20260917-062111-704
+- [x] **Continuous camera frames** — frames=127, fps=8, simulated seconds=15.750; directory=C:\Users\31797\Documents\ChatGPT\作业 3\VR_Project_2026_2\CourseValidation\Frames\Week02\20260917-062111-704
 - [x] **No Unity Error/Exception during validation** — 
 
 ## 本次实际相机截图
