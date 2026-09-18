@@ -1,6 +1,6 @@
 #!/bin/sh
 set -eu
-tracked_secrets=$(git ls-files | grep -E '(^|/)(\.env($|\.)|\.venv/|.*\.(pem|key)$)' || true)
+tracked_secrets=$(git ls-files | grep -E '(^|/)\.env($|/)|(^|/)\.venv(/|$)|(^|/).*\.(pem|key)$' || true)
 if [ -n "$tracked_secrets" ]; then
   echo "拒绝推送：仓库已跟踪敏感文件。"
   echo "$tracked_secrets"
