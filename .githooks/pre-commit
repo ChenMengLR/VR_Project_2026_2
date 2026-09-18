@@ -1,0 +1,11 @@
+#!/bin/sh
+set -eu
+
+bad_paths=$(git diff --cached --name-only | grep -E '(^|/)(\.env($|\.)|\.venv/|.*\.(pem|key)$)' || true)
+if [ -n "$bad_paths" ]; then
+  echo "拒绝提交敏感文件："
+  echo "$bad_paths"
+  exit 1
+fi
+
+git diff --cached --check

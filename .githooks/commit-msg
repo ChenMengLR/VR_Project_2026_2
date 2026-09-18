@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eu
+message=$(cat "$1")
+if ! printf '%s\n' "$message" | grep -Eq '^(Week [0-9]{1,2}:|Fix:|Docs:|Chore:|Setup:|Refactor:|Test:)[[:space:]].{3,}$'; then
+  echo "提交信息格式应为 Week NN: 描述，或 Fix:/Docs:/Chore:/Setup:/Refactor:/Test: 描述。"
+  exit 1
+fi
