@@ -1,8 +1,8 @@
 # VR Project 2026 2
 
-最新状态见 [个人作业进度](Docs/Current_Personal_Assignment_Status.md)：仓库已公开，第 2 周已在 Notion 提交仓库链接、自动协助 Play 验证视频和 Inspector 截图；第 3 周已填写电脑端结果，仍待 Quest 真机视频后提交。小组任务按用户要求忽略。
+最新状态见 [个人作业进度](Docs/Current_Personal_Assignment_Status.md)：仓库已公开，第 2 周已在 Notion 提交仓库链接、自动协助 Play 验证视频和 Inspector 截图；第 3 周电脑端功能已验证，已按用户确认采用 Meta XR Simulator 录制来替代 Quest 真机演示，未使用 Quest。连续录像完成、上传和课程页提交状态以本轮证据核验为准。小组任务按用户要求忽略。
 
-WANG HAOBIN 的个人 VR 课程项目。第 2 周使用 Unity XR Interaction Toolkit 学习抓取，第 3 周使用 Meta XR Interaction SDK 学习移动与传送。当前没有 Quest 设备，真机验证仍待完成；小组任务按用户要求不在本次范围内。
+WANG HAOBIN 的个人 VR 课程项目。第 2 周使用 Unity XR Interaction Toolkit 学习抓取，第 3 周使用 Meta XR Interaction SDK 学习移动与传送。当前没有 Quest 设备；本次按用户确认使用 Meta XR Simulator 完成电脑端演示，未把模拟器描述为 Quest 真机。课程方是否接受该替代方式仍需以课程要求或教师意见为准；小组任务按用户要求不在本次范围内。
 
 ## 打开和练习
 
@@ -38,7 +38,7 @@ Windows 和 Android 已配置 OpenXR/Oculus Touch，Android 启用 Meta Quest Su
 - 第 2 周在真实 Play Mode 中完成 79 项自动 API 交互检查，全部通过；检查物理落地、六类 XRI 事件、材质颜色、实际跟随、释放与物体独立性，无运行错误。
 - [第 2 周运行报告](CourseValidation/Runtime/Week02_Runtime.md)、[机器可读结果](CourseValidation/Runtime/Week02_Runtime.json)、[连续相机测试视频](CourseValidation/Week02_Automated_Play_Test.mp4)。视频 1280×720，8 fps，约 15.9 秒，记录自动验证过程。
 - [第 2 周虚拟键盘输入检查](CourseValidation/Runtime/Week02_KeyboardInput.md) 一次通过：G → G+T → G → 释放，经官方模拟器触发真实 Select / Activate / Deactivate / SelectExit。临时输入设备与设置已恢复。
-- [第 3 周运行报告](CourseValidation/Runtime/Week03_Runtime.md)：实际 Meta 控制器输入完成 StartZone → TargetZone 传送、抓球、抬升 0.60 m 与释放落地；另一个关闭 Operator 的普通 Simulator 会话持续 125.6 秒 / 7,401 帧。截图是关键帧，未生成连续 W3 录像。
+- [第 3 周运行报告](CourseValidation/Runtime/Week03_Runtime.md)：电脑端 Meta Simulator 的实际控制器输入完成 StartZone → TargetZone 传送、抓球、抬升 0.60 m 与释放落地；另一个关闭 Operator 的普通 Simulator 会话持续 125.6 秒 / 7,401 帧。该报告和后续视频均属于模拟器证据，未使用 Quest；连续视频已完成并补入 `CourseValidation/Week03_Simulator_Demo.mp4`；运行报告和机器可读检查点在 `CourseValidation/Runtime/Week03_Simulator_Demo_20260918.md` 与 `.json`，均注明“Meta XR Simulator / 非 Quest 真机”。
 - Meta 205 的 Windows Editor 原生日志解码异常使用项目内兼容脚本处理，原始日志保留于忽略的 Logs 目录。初始化窗口和早期一次 SES 重入失败的边界见运行报告。
 
 测试视频和截图属于自动协助验证，不能声称为学生本人键鼠演示或 Quest 真机录像。真实运行报告会明确记录验证方式及范围。
@@ -47,12 +47,12 @@ Windows 和 Android 已配置 OpenXR/Oculus Touch，Android 启用 Meta Quest Su
 
 第 2 周：个人仓库链接、ExtensionObject 的 Inspector 截图和短抓取视频。
 
-第 3 周：个人仓库链接、Quest 真机连续演示 Start → Teleport → Grab → Release。电脑模拟器证据不能替代课程要求的真机视频。
+第 3 周：个人仓库链接，以及 Start → Teleport → Grab → Release 的连续演示。按用户确认，本次采用 Meta XR Simulator 作为 Quest 真机视频的替代证据，明确标注未使用 Quest；老师或课程方是否接受这一替代方式仍待确认。
 
 GitHub 上传与 Notion 作业提交是两个步骤。[个人作业卡](https://app.notion.com/p/Wang-Haobin-3d67c00fe5ad81288de5d923b15cf0d2) 的编辑权限已恢复，GitHub Repository 字段已填写。
 
 - [第 2 周 Notion 作业](https://app.notion.com/p/2-2-3dd7c00fe5ad8163920ed7bbd12cd78f)：2026 年 9 月 17 日已填写 GitHub 链接，上传 `Week02_Automated_Play_Test.mp4`，在正文附上 ExtensionObject Inspector 截图并完成视觉读回；状态为“已提交”。作业中已明确标注视频是自动协助 Play 验证，不代表学生本人手动操作或 Quest 真机录像。
-- [第 3 周 Notion 作业](https://app.notion.com/p/3-3-3dd7c00fe5ad8183a849f8b55c3b8133)：已填写仓库链接和电脑端报告说明；保持未提交，等待 Quest 真人连续演示视频。电脑端结果不能替代真机要求。
+- [第 3 周 Notion 作业](https://app.notion.com/p/3-3-3dd7c00fe5ad8183a849f8b55c3b8133)：已填写仓库链接和电脑端报告说明；按用户确认使用 Meta XR Simulator 完成连续演示，视频已放入仓库。Notion 视频上传和提交状态仍待完成；页面和仓库会明确写明“模拟器、非 Quest 真机”，不声称教师已批准该替代方式。
 
 小组任务按用户要求忽略。
 

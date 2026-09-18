@@ -1,0 +1,18 @@
+{
+  "phase": "00-start",
+  "seconds": 0.0,
+  "snapshot": {
+    "camera": "(-1.5000, 1.7215, 0.7500)",
+    "cameraRot": "(0.17303, 0.64107, -0.15149, 0.73222)",
+    "ball": "(1.5000, 0.2065, 1.1500)",
+    "arc": "(-1.0236, 1.3863, 0.7508)",
+    "arcRot": "(0.13382, 0.70213, -0.13700, 0.68581)",
+    "teleportTarget": "((0.00, 0.00, 0.00), (0.58652, 0.39496, 0.39496, 0.58652))",
+    "teleportState": "Disabled",
+    "candidate": false,
+    "grabTarget": "(-1.1000, 1.3372, 0.4660)",
+    "grabState": "Normal",
+    "grabCandidate": false,
+    "grabSelected": false
+  }
+}

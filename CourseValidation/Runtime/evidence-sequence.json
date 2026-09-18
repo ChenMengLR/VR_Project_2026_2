@@ -1,0 +1,164 @@
+[
+  {
+    "phase": "00-start",
+    "seconds": 0.0,
+    "snapshot": {
+      "camera": "(-1.5000, 1.7215, 0.7500)",
+      "cameraRot": "(0.17303, 0.64107, -0.15149, 0.73222)",
+      "ball": "(1.5000, 0.2065, 1.1500)",
+      "arc": "(-1.0236, 1.3863, 0.7508)",
+      "arcRot": "(0.13382, 0.70213, -0.13700, 0.68581)",
+      "teleportTarget": "((0.00, 0.00, 0.00), (0.58652, 0.39496, 0.39496, 0.58652))",
+      "teleportState": "Disabled",
+      "candidate": false,
+      "grabTarget": "(-1.1000, 1.3372, 0.4660)",
+      "grabState": "Normal",
+      "grabCandidate": false,
+      "grabSelected": false
+    }
+  },
+  {
+    "phase": "01-teleport-hover",
+    "seconds": 5.719,
+    "snapshot": {
+      "camera": "(-1.5000, 1.7215, 0.7500)",
+      "cameraRot": "(0.17303, 0.64107, -0.15149, 0.73222)",
+      "ball": "(1.5000, 0.2065, 1.1500)",
+      "arc": "(-1.0236, 1.3863, 0.7508)",
+      "arcRot": "(0.13382, 0.70213, -0.13700, 0.68581)",
+      "teleportTarget": "((1.50, 0.09, 0.75), (0.00000, -0.70711, 0.00000, 0.70711))",
+      "teleportState": "Hover",
+      "candidate": true,
+      "grabTarget": "(-1.1000, 1.3372, 0.4660)",
+      "grabState": "Normal",
+      "grabCandidate": false,
+      "grabSelected": false
+    }
+  },
+  {
+    "phase": "02-after-teleport",
+    "seconds": 11.454,
+    "snapshot": {
+      "camera": "(1.4137, 1.7430, 0.7500)",
+      "cameraRot": "(0.16261, -0.68815, 0.16261, 0.68815)",
+      "ball": "(1.5000, 0.2065, 1.1500)",
+      "arc": "(0.9414, 1.4078, 0.8121)",
+      "arcRot": "(0.14557, -0.63780, 0.12445, 0.74601)",
+      "teleportTarget": "((1.58, 0.09, 0.69), (0.00000, -0.64983, 0.00000, 0.76008))",
+      "teleportState": "Disabled",
+      "candidate": true,
+      "grabTarget": "(1.0548, 1.3588, 1.0844)",
+      "grabState": "Normal",
+      "grabCandidate": false,
+      "grabSelected": false
+    }
+  },
+  {
+    "phase": "03-grab-hover",
+    "seconds": 17.594,
+    "snapshot": {
+      "camera": "(1.4138, 1.7430, 0.7499)",
+      "cameraRot": "(0.60593, 0.08406, -0.06460, 0.78842)",
+      "ball": "(1.5000, 0.2065, 1.1500)",
+      "arc": "(0.9414, 1.4078, 0.8120)",
+      "arcRot": "(0.14557, -0.63780, 0.12445, 0.74601)",
+      "teleportTarget": "((1.58, 0.09, 0.69), (0.00000, -0.64983, 0.00000, 0.76008))",
+      "teleportState": "Disabled",
+      "candidate": true,
+      "grabTarget": "(1.5755, 0.2073, 1.1507)",
+      "grabState": "Hover",
+      "grabCandidate": true,
+      "grabSelected": false
+    }
+  },
+  {
+    "phase": "04-grab-select",
+    "seconds": 21.329,
+    "snapshot": {
+      "camera": "(1.4138, 1.7430, 0.7498)",
+      "cameraRot": "(0.60593, 0.08406, -0.06460, 0.78842)",
+      "ball": "(1.5000, 0.2065, 1.1500)",
+      "arc": "(0.9415, 1.4078, 0.8120)",
+      "arcRot": "(0.14557, -0.63780, 0.12445, 0.74601)",
+      "teleportTarget": "((1.58, 0.09, 0.69), (0.00000, -0.64983, 0.00000, 0.76008))",
+      "teleportState": "Disabled",
+      "candidate": true,
+      "grabTarget": "(1.5756, 0.2073, 1.1506)",
+      "grabState": "Select",
+      "grabCandidate": true,
+      "grabSelected": true
+    }
+  },
+  {
+    "phase": "05-grab-move",
+    "seconds": 27.047,
+    "snapshot": {
+      "camera": "(1.4138, 1.7430, 0.7498)",
+      "cameraRot": "(0.60593, 0.08406, -0.06460, 0.78842)",
+      "ball": "(1.7049, 0.6565, 1.1730)",
+      "arc": "(0.9415, 1.4078, 0.8119)",
+      "arcRot": "(0.14557, -0.63780, 0.12445, 0.74601)",
+      "teleportTarget": "((1.58, 0.09, 0.69), (0.00000, -0.64983, 0.00000, 0.76008))",
+      "teleportState": "Disabled",
+      "candidate": true,
+      "grabTarget": "(1.7805, 0.6573, 1.1736)",
+      "grabState": "Select",
+      "grabCandidate": true,
+      "grabSelected": true
+    }
+  },
+  {
+    "phase": "06-before-release",
+    "seconds": 35.422,
+    "snapshot": {
+      "camera": "(1.4139, 1.7430, 0.7496)",
+      "cameraRot": "(0.60593, 0.08406, -0.06460, 0.78842)",
+      "ball": "(1.5530, 0.4565, 1.5462)",
+      "arc": "(0.9416, 1.4078, 0.8118)",
+      "arcRot": "(0.14557, -0.63780, 0.12445, 0.74601)",
+      "teleportTarget": "((1.58, 0.09, 0.69), (0.00000, -0.64983, 0.00000, 0.76008))",
+      "teleportState": "Disabled",
+      "candidate": true,
+      "grabTarget": "(1.6286, 0.4573, 1.5469)",
+      "grabState": "Select",
+      "grabCandidate": true,
+      "grabSelected": true
+    }
+  },
+  {
+    "phase": "07-release",
+    "seconds": 38.36,
+    "snapshot": {
+      "camera": "(1.4139, 1.7430, 0.7496)",
+      "cameraRot": "(0.60593, 0.08406, -0.06460, 0.78842)",
+      "ball": "(1.5439, 0.1397, 1.5687)",
+      "arc": "(0.9416, 1.4078, 0.8117)",
+      "arcRot": "(0.14557, -0.63780, 0.12445, 0.74601)",
+      "teleportTarget": "((1.58, 0.09, 0.69), (0.00000, -0.64983, 0.00000, 0.76008))",
+      "teleportState": "Disabled",
+      "candidate": true,
+      "grabTarget": "(1.6286, 0.4573, 1.5468)",
+      "grabState": "Normal",
+      "grabCandidate": false,
+      "grabSelected": false
+    }
+  },
+  {
+    "phase": "08-final",
+    "seconds": 41.532,
+    "snapshot": {
+      "camera": "(1.4140, 1.7430, 0.7495)",
+      "cameraRot": "(0.60593, 0.08406, -0.06460, 0.78842)",
+      "ball": "(1.4621, 0.1440, 1.7697)",
+      "arc": "(0.9416, 1.4078, 0.8117)",
+      "arcRot": "(0.14557, -0.63780, 0.12445, 0.74601)",
+      "teleportTarget": "((1.58, 0.09, 0.69), (0.00000, -0.64983, 0.00000, 0.76008))",
+      "teleportState": "Disabled",
+      "candidate": true,
+      "grabTarget": "(1.6286, 0.4573, 1.5468)",
+      "grabState": "Normal",
+      "grabCandidate": false,
+      "grabSelected": false
+    }
+  }
+]
